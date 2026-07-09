@@ -1,7 +1,7 @@
-# Pokémon API Project
+# PokÃ©mon API Project
 
 ## Overview
-This project fetches Pokémon data from the PokeAPI, stores the raw response, validates it with lightweight data-quality checks, normalises the fields, and loads the cleaned result into SQLite tables.
+This project fetches PokÃ©mon data from the PokeAPI, stores the raw response, validates it with lightweight data-quality checks, normalises the fields, and loads the cleaned result into SQLite tables.
 
 ## Requirements
 - Python 3.10+
@@ -29,7 +29,7 @@ python poke.py pikachu
 - src/utils/pretty_print.py: CLI display helper
 
 ## Pipeline explanation
-1. Check the final table for a previously stored Pokémon.
+1. Check the final table for a previously stored PokÃ©mon.
 2. If unavailable, check staging.
 3. Otherwise, fetch from the API.
 4. Store raw data in raw_pokemon.
@@ -37,7 +37,7 @@ python poke.py pikachu
 6. If passed, normalise and load into staging and final tables.
 
 ## Error handling
-- Missing or invalid Pokémon names return a friendly CLI message.
+- Missing or invalid PokÃ©mon names return a friendly CLI message.
 - API failures are logged and surfaced to the CLI.
 - DQ failures stop staging and raise a friendly error.
 
@@ -49,8 +49,4 @@ python poke.py pikachu
 - Inconsistent casing
 - Duplicate entries
 
-## Example commands
-```bash
-python poke.py pikachu
-python -m unittest discover -s tests -q
-```
+
