@@ -12,10 +12,6 @@ This project fetches Pokémon data from the PokeAPI, stores the raw response, va
 python -m pip install -r requirements.txt
 ```
 
-## How to run
-```bash
-python poke.py pikachu
-```
 
 ## Project structure
 - src/api/fetch_pokemon.py: API wrapper for the raw payload
